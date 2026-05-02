@@ -51,7 +51,7 @@ function MagneticText({ children }) {
       onMouseLeave={reset}
       animate={{ x: position.x, y: position.y }}
       transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
-      className="relative inline-block cursor-pointer hover:text-zinc-600 transition-colors"
+      className="relative cursor-pointer hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors w-full flex justify-center"
     >
       {children}
     </motion.div>
@@ -90,16 +90,14 @@ export default function Hero() {
     <section className="flex flex-col w-full relative z-10">
       {/* 1. Banner Row */}
       <div className="w-full border-b border-zinc-200 dark:border-zinc-800">
-        <div className="max-w-3xl mx-auto w-[95%] md:w-full border-x border-zinc-200 dark:border-zinc-800 h-[180px] sm:h-[23vh] md:h-[27vh] lg:h-[30vh] relative flex items-center justify-center bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#27272a_1px,transparent_1px)] [background-size:10px_10px]">
-          <div className="text-zinc-500 dark:text-zinc-400 text-2xl font-semibold">
-            <MagneticText>
-              <div className="text-center whitespace-nowrap">
-                <a href="mailto:rhythmdoshi04@gmail.com?subject=Let's connect&body=Hi Rhythm,">
-                  Open for full-time<br />& freelance work
-                </a>
-              </div>
-            </MagneticText>
-          </div>
+        <div className="max-w-3xl mx-auto w-[95%] md:w-full border-x border-zinc-200 dark:border-zinc-800 py-10 md:py-14 grid place-items-center bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#27272a_1px,transparent_1px)] [background-size:16px_16px]">
+          <MagneticText>
+            <h1 className="text-center font-medium text-zinc-500 dark:text-zinc-400 text-xl sm:text-2xl leading-snug tracking-tight">
+              <a href="mailto:rhythmdoshi04@gmail.com?subject=Let's connect&body=Hi Rhythm,">
+                Open for full-time<br />& freelance work
+              </a>
+            </h1>
+          </MagneticText>
         </div>
       </div>
 
@@ -159,54 +157,50 @@ export default function Hero() {
         </div>
       </div>
 
-      <CrossLine />
-
       {/* 3. Contact Grid Row */}
       <div className="w-full border-b border-zinc-200 dark:border-zinc-800">
-        <div className="max-w-3xl mx-auto w-[95%] md:w-full border-x border-zinc-200 dark:border-zinc-800 p-4 py-8 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 font-mono tracking-tighter text-[14px] sm:text-[15px]">
+        <div className="max-w-3xl mx-auto w-[95%] md:w-full border-x border-zinc-200 dark:border-zinc-800 px-4 py-5 grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-3 font-mono tracking-tighter text-[14px] sm:text-[15px]">
           <div className="flex flex-col gap-2.5">
-            <div className="flex items-center gap-2.5 group text-zinc-900 dark:text-zinc-50">
+            <div className="flex items-center gap-3 group text-zinc-900 dark:text-zinc-50">
               <ContactIcon><Mail className="size-3.5" /></ContactIcon>
               <a href="mailto:rhythmdoshi04@gmail.com" className="hover:underline truncate">rhythmdoshi04@gmail.com</a>
               <button onClick={() => copyToClipboard("rhythmdoshi04@gmail.com")} className="opacity-0 group-hover:opacity-100 transition-opacity text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100">
                 <Copy className="size-4" />
               </button>
             </div>
-            <div className="flex items-center gap-2.5 group text-zinc-900 dark:text-zinc-50">
+            <div className="flex items-center gap-3 group text-zinc-900 dark:text-zinc-50">
               <ContactIcon><Phone className="size-3.5" /></ContactIcon>
               <a href="tel:+91-9981603789" className="hover:underline">+91-9981603789</a>
               <button onClick={() => copyToClipboard("+91-9981603789")} className="opacity-0 group-hover:opacity-100 transition-opacity text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100">
                 <Copy className="size-4" />
               </button>
             </div>
-            <div className="flex items-center gap-2.5 text-zinc-900 dark:text-zinc-50">
+            <div className="flex items-center gap-3 text-zinc-900 dark:text-zinc-50">
               <ContactIcon><MapPin className="size-3.5" /></ContactIcon>
               <span className="hover:underline">Bhopal, India</span>
             </div>
-            <div className="flex items-center gap-2.5 text-zinc-900 dark:text-zinc-50">
+            <div className="flex items-center gap-3 text-zinc-900 dark:text-zinc-50">
               <ContactIcon><Clock className="size-3.5" /></ContactIcon>
               <span className="hover:underline">{formatTime(currentTime)}</span>
             </div>
           </div>
 
           <div className="flex flex-col gap-2.5">
-            <div className="flex items-center gap-2.5 text-zinc-900 dark:text-zinc-50">
+            <div className="flex items-center gap-3 text-zinc-900 dark:text-zinc-50">
               <ContactIcon><FileText className="size-3.5" /></ContactIcon>
               <a href="#" className="hover:underline">Resume</a>
             </div>
-            <div className="flex items-center gap-2.5 text-zinc-900 dark:text-zinc-50">
+            <div className="flex items-center gap-3 text-zinc-900 dark:text-zinc-50">
               <ContactIcon><MarsIcon /></ContactIcon>
               <span className="hover:underline">He/him</span>
             </div>
-            <div className="flex items-center gap-2.5 text-zinc-900 dark:text-zinc-50">
+            <div className="flex items-center gap-3 text-zinc-900 dark:text-zinc-50">
               <ContactIcon><Globe className="size-3.5" /></ContactIcon>
               <a href="https://rhythmdoshi.xyz" target="_blank" rel="noreferrer" className="hover:underline">rhythmdoshi.xyz</a>
             </div>
           </div>
         </div>
       </div>
-
-      <CrossLine />
 
       {/* 4. Social Links Row */}
       <div className="w-full border-b border-zinc-200 dark:border-zinc-800">
@@ -249,8 +243,6 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      
-      <CrossLine />
     </section>
   );
 }
