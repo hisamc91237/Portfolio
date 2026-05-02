@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-50 text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50 transition-colors duration-300;
+  }
+  
+  /* We use these utility classes to easily build the grid layout */
+  .grid-border-r {
+    @apply border-r border-zinc-200 dark:border-zinc-800;
+  }
+  .grid-border-b {
+    @apply border-b border-zinc-200 dark:border-zinc-800;
+  }
+  .grid-border-t {
+    @apply border-t border-zinc-200 dark:border-zinc-800;
+  }
+}
