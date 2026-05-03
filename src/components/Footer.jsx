@@ -33,8 +33,8 @@ export default function Footer() {
         {/* Left / Bottom on Mobile */}
         <div className="flex flex-col items-center md:items-start md:order-1">
           <a href="#" className="text-xl font-medium text-zinc-900 dark:text-zinc-50 underline hover:text-zinc-600 transition">Hisamuddin Chandiwala</a>
-          <a href="#" className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition mt-2">Github</a>
-          <a href="#" className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition">Linkedin</a>
+          <a href="https://github.com/hisamc91237" target="_blank" rel="noopener noreferrer" className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition mt-2">Github</a>
+          <a href="https://www.linkedin.com/in/hisamuddin-chandiwala-975b88219/" target="_blank" rel="noopener noreferrer" className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition">Linkedin</a>
           <a href="tel:+91-9819871432" className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition">+91-9819871432</a>
         </div>
 
