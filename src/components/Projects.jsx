@@ -1,34 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SectionWrapper from './ui/SectionWrapper';
 import CrossLine from './ui/CrossLine';
 import { ArrowUpRight } from 'lucide-react';
-
-const PROJECTS = [
-  {
-    title: "BetterDrive",
-    description: "A Google Drive clone built with Next.js, Tailwind CSS, and Appwrite.",
-    link: "https://betterdrive.vercel.app/",
-    image: "https://placehold.co/600x400/000000/FFFFFF/png?text=BetterDrive"
-  },
-  {
-    title: "SocietySync",
-    description: "A Society Management System built with React, Node.js, and MongoDB.",
-    link: "https://societysync.vercel.app/",
-    image: "https://placehold.co/600x400/000000/FFFFFF/png?text=SocietySync"
-  },
-  {
-    title: "LivelyChat",
-    description: "A real-time chat application built with React, Socket.io, and Node.js.",
-    link: "https://livelychat.vercel.app/",
-    image: "https://placehold.co/600x400/000000/FFFFFF/png?text=LivelyChat"
-  },
-  {
-    title: "CineClair",
-    description: "A movie recommendation system built with React, TMDB API, and Tailwind CSS.",
-    link: "https://cineclair.vercel.app/",
-    image: "https://placehold.co/600x400/000000/FFFFFF/png?text=CineClair"
-  }
-];
+import { PROJECTS } from '../data/projects';
 
 export default function Projects() {
   return (
@@ -47,28 +22,31 @@ export default function Projects() {
         <SectionWrapper>
           <div className="grid grid-cols-1 md:grid-cols-2">
             {PROJECTS.map((project, index) => (
-              <a 
-                key={index}
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`p-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors group h-80 flex flex-col ${index % 2 === 0 ? 'md:border-r border-zinc-200 dark:border-zinc-800' : ''} ${index < PROJECTS.length - 2 ? 'border-b border-zinc-200 dark:border-zinc-800' : 'md:border-b-0 border-b border-zinc-200 dark:border-zinc-800'}`}
+              <Link 
+                key={project.id}
+                to={`/project/${project.id}`}
+                className={`p-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors group h-[400px] flex flex-col ${index % 2 === 0 ? 'md:border-r border-zinc-200 dark:border-zinc-800' : ''} ${index < PROJECTS.length - 2 ? 'border-b border-zinc-200 dark:border-zinc-800' : 'md:border-b-0 border-b border-zinc-200 dark:border-zinc-800'}`}
               >
-                <div className="h-[72%] w-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl relative overflow-hidden">
+                <div className="h-[75%] w-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl relative overflow-hidden">
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100"
+                    className="w-full h-full object-cover transition-all duration-700 scale-105 group-hover:scale-100"
                   />
-                </div>
-                <div className="h-[28%] flex flex-col justify-center px-2">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-medium text-zinc-900 dark:text-zinc-50 group-hover:underline">{project.title}</h3>
-                    <ArrowUpRight className="size-4 text-zinc-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500 flex items-center justify-center">
+                    <div className="bg-white dark:bg-zinc-900 px-4 py-2 rounded-full font-medium text-sm translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 shadow-xl">
+                      View Details
+                    </div>
                   </div>
-                  <p className="text-xs text-zinc-500 dark:text-zinc-400 line-clamp-2 mt-1">{project.description}</p>
                 </div>
-              </a>
+                <div className="h-[25%] flex flex-col justify-center px-2">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-xl font-medium text-zinc-900 dark:text-zinc-50">{project.title}</h3>
+                    <ArrowUpRight className="size-5 text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-zinc-100 transition-colors" />
+                  </div>
+                  <p className="text-sm text-zinc-500 dark:text-zinc-400 line-clamp-2 mt-1">{project.tagline}</p>
+                </div>
+              </Link>
             ))}
           </div>
 

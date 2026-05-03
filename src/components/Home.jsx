@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from './Hero';
 import About from './About';
+import Experience from './Experience';
 import Skills from './Skills';
 import Projects from './Projects';
 import Education from './Education';
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
+      <Experience />
       <Skills />
       <Projects />
       <Education />

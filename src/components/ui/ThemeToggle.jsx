@@ -47,10 +47,10 @@ export default function ThemeToggle() {
       <div className="absolute top-0 w-3 h-1 bg-zinc-800 dark:bg-zinc-900 rounded-b-full z-20" />
       
       {/* Container for cord and handle */}
-      <div className="absolute top-0 flex flex-col items-center z-10 pointer-events-none">
+      <div className="absolute top-0 flex flex-col items-center z-10 cursor-pointer" onClick={() => toggleTheme()}>
         {/* Dynamic Cord */}
         <motion.div 
-          className="w-[1px] bg-zinc-300 dark:bg-zinc-700 origin-top"
+          className="w-[1px] bg-zinc-300 dark:bg-zinc-700 origin-top pointer-events-none"
           style={{ 
             height: cordHeight,
             rotate: cordRotate
@@ -63,17 +63,20 @@ export default function ThemeToggle() {
           dragConstraints={{ top: 0, bottom: 100, left: -50, right: 50 }}
           dragElastic={0.4}
           onDragEnd={handleDragEnd}
-          onTap={() => toggleTheme()}
+          onTap={(e) => {
+            e.stopPropagation(); // Prevent the parent onClick from firing
+            toggleTheme();
+          }}
           animate={controls}
           style={{ x, y }}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="w-4 h-8 bg-zinc-950 dark:bg-zinc-50 rounded-full cursor-grab active:cursor-grabbing flex items-center justify-center shadow-md border border-zinc-800 dark:border-zinc-200 pointer-events-auto absolute"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 h-10 bg-zinc-950 dark:bg-zinc-50 rounded-full cursor-pointer flex items-center justify-center shadow-lg border border-zinc-800 dark:border-zinc-200 absolute touch-none z-30"
           // We position the handle so its top attaches to the bottom of the base cord length visually
           initial={{ top: BASE_LENGTH }}
         >
           {/* Inner circle or icon indicator */}
-          <div className={`w-1.5 h-1.5 rounded-full transition-colors duration-300 ${theme === 'dark' ? 'bg-zinc-950' : 'bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.8)]'}`} />
+          <div className={`w-2 h-2 rounded-full transition-colors duration-300 ${theme === 'dark' ? 'bg-zinc-950' : 'bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.8)]'}`} />
         </motion.div>
       </div>
     </div>

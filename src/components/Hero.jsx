@@ -103,9 +103,9 @@ export default function Hero() {
 
       {/* 2. Profile Info Row */}
       <div className="w-full border-b border-zinc-200 dark:border-zinc-800">
-        <div className="max-w-3xl mx-auto w-[95%] md:w-full border-x border-zinc-200 dark:border-zinc-800 h-[140px] sm:h-[17vh] md:h-[20vh] lg:h-[24vh] flex">
+        <div className="max-w-3xl mx-auto w-[95%] md:w-full border-x border-zinc-200 dark:border-zinc-800 h-[160px] sm:h-[20vh] md:h-[24vh] lg:h-[28vh] flex">
           {/* Avatar Box */}
-          <div className="h-full aspect-square border-r border-zinc-200 dark:border-zinc-800 flex items-center justify-center p-3 sm:p-5 md:p-8 shrink-0">
+          <div className="h-full aspect-square border-r border-zinc-200 dark:border-zinc-800 flex items-center justify-center p-2 sm:p-4 md:p-6 shrink-0">
             <div className="relative w-full h-full rounded-full border border-zinc-300 dark:border-zinc-700 p-[1px] sm:p-[2px] transition-all duration-300">
               <div className="relative w-full h-full rounded-full overflow-hidden bg-zinc-200 dark:bg-zinc-800">
                 <AnimatePresence mode="wait">
@@ -126,10 +126,8 @@ export default function Hero() {
 
           {/* Info Box */}
           <div className="h-full flex-1 flex flex-col min-w-0">
-            <div className="h-[50%] border-b border-zinc-200 dark:border-zinc-800 flex items-end px-3 sm:px-4 pb-[2px] gap-2 font-mono text-[9px] sm:text-[10px] md:text-xs text-zinc-500 dark:text-zinc-400 overflow-hidden whitespace-nowrap">
-              <span>text-3xl</span>
-              <span>text-zinc-50</span>
-              <span className="hidden sm:inline">font-medium</span>
+            <div className="h-[50%] border-b border-zinc-200 dark:border-zinc-800 flex items-end px-3 sm:px-4 pb-[2px] gap-2 font-mono text-[9px] sm:text-[10px] md:text-xs text-zinc-500 dark:text-zinc-400 overflow-hidden whitespace-nowrap uppercase tracking-widest font-bold">
+              <span>Full Stack Developer</span>
             </div>
             <div className="h-[25%] border-b border-zinc-200 dark:border-zinc-800 flex items-center px-3 sm:px-4 gap-1.5 sm:gap-2">
               <h1 className="text-xl sm:text-2xl md:text-3xl font-medium text-zinc-900 dark:text-zinc-50 tracking-tight truncate">Rhythm Doshi</h1>
