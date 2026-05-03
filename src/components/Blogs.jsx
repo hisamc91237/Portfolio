@@ -21,8 +21,8 @@ export default function Blogs() {
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* Blog Post 1 */}
             <a 
-              href="https://medium.com/@rhythmdoshi04/heres-how-i-run-multiple-backends-24x7-for-free-from-my-own-machine-cc70aca2c96e"
-              target="_blank"
+              href="https://medium.com/@hisamuddin"
+              target="_blank" 
               rel="noopener noreferrer"
               className="p-4 border-r border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors group h-64 md:h-80 flex flex-col"
             >

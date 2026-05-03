@@ -32,10 +32,10 @@ export default function Footer() {
       <SectionWrapper innerClassName="h-full flex flex-col md:flex-row justify-between md:items-end p-4 py-8 md:pt-4">
         {/* Left / Bottom on Mobile */}
         <div className="flex flex-col items-center md:items-start md:order-1">
-          <a href="#" className="text-xl font-medium text-zinc-900 dark:text-zinc-50 underline hover:text-zinc-600 transition">Rhythm Doshi</a>
+          <a href="#" className="text-xl font-medium text-zinc-900 dark:text-zinc-50 underline hover:text-zinc-600 transition">Hisamuddin Chandiwala</a>
           <a href="#" className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition mt-2">Github</a>
           <a href="#" className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition">Linkedin</a>
-          <a href="tel:+91-9981603789" className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition">+91-9981603789</a>
+          <a href="tel:+91-9819871432" className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition">+91-9819871432</a>
         </div>
 
         {/* Right / Top on Mobile */}

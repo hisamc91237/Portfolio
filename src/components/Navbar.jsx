@@ -9,10 +9,10 @@ export default function Navbar() {
         
         {/* Logo / Branding */}
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="size-6 rounded-full bg-zinc-900 dark:bg-zinc-100 flex items-center justify-center text-zinc-50 dark:text-zinc-900 font-bold text-[10px] group-hover:scale-110 transition-transform">
-            RD
+          <div className="size-6 rounded-full overflow-hidden group-hover:scale-110 transition-transform">
+            <img src="/logo.svg" alt="Logo" className="w-full h-full object-cover" />
           </div>
-          <span className="text-zinc-900 dark:text-zinc-50 font-medium text-sm hidden sm:block group-hover:opacity-70 transition-opacity">Rhythm Doshi</span>
+          <span className="text-zinc-900 dark:text-zinc-50 font-medium text-sm hidden sm:block group-hover:opacity-70 transition-opacity">Hisamuddin Chandiwala</span>
         </Link>
 
         {/* Links */}

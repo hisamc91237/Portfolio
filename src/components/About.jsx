@@ -25,7 +25,7 @@ export default function About() {
                 <li><span className="font-medium text-zinc-900 dark:text-zinc-50">Highlights</span>
                   <ul className="list-disc pl-6 mt-2 flex flex-col gap-2 marker:text-zinc-300 dark:marker:text-zinc-700">
                     <li>Hacktoberfest 2025 — <span className="font-medium underline"><a target="_blank" rel="noopener noreferrer" className="text-zinc-900 dark:text-zinc-50" href="https://www.holopin.io/hacktoberfest2025/userbadge/cmhk5qqs8007mjn04ufu1xiei">Supercontributor</a></span> (Open Source)</li>
-                    <li>Solved <span className="font-medium underline"><a target="_blank" rel="noopener noreferrer" className="text-zinc-900 dark:text-zinc-50" href="https://leetcode.com/u/Rhythmdoshi31/">700+ DSA problems</a></span> (and counting, because it's fun)</li>
+                    <li>Solved <span className="font-medium underline"><a target="_blank" rel="noopener noreferrer" className="text-zinc-900 dark:text-zinc-50" href="https://leetcode.com/u/Hisamuddin/">700+ DSA problems</a></span> (and counting, because it's fun)</li>
                   </ul>
                 </li>
               </ul>

@@ -52,7 +52,7 @@ export default function Projects() {
 
           <div className="w-full h-16 flex items-center justify-center border-t border-zinc-200 dark:border-zinc-800">
             <a 
-              href="https://github.com/Rhythmdoshi31" 
+              href="https://github.com/hisamc91237" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 font-medium text-sm transition-colors flex items-center gap-2"
