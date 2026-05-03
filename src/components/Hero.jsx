@@ -113,10 +113,10 @@ export default function Hero() {
                     key={currentIndex % IMAGES.length}
                     src={IMAGES[currentIndex % IMAGES.length]}
                     alt="Rhythm Doshi"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 1 }}
+                    initial={{ opacity: 0, scale: 1.1, filter: "grayscale(80%)" }}
+                    animate={{ opacity: 1, scale: 1, filter: "grayscale(0%)" }}
+                    exit={{ opacity: 0, scale: 0.95 }}
+                    transition={{ duration: 0.6, ease: "easeInOut" }}
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                 </AnimatePresence>

@@ -52,7 +52,7 @@ export const EXPERIENCES = [
 ];
 
 export default function Experience() {
-  const [expandedIndex, setExpandedIndex] = useState(0);
+  const [expandedIndex, setExpandedIndex] = useState(-1);
 
   return (
     <>
