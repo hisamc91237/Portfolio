@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   FaEnvelope,
   FaPhone,
@@ -260,9 +261,9 @@ export default function Hero() {
               <ContactIcon>
                 <FileText className="size-3.5" />
               </ContactIcon>
-              <a href="#" className="hover:underline">
+              <Link to="/resume" className="hover:underline">
                 Resume
-              </a>
+              </Link>
             </div>
             <div className="flex items-center gap-3 text-zinc-900 dark:text-zinc-50">
               <ContactIcon>

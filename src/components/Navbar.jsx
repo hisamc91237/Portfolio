@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-6 text-xs sm:text-sm font-medium tracking-tighter">
           <Link to="/" className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors">Home</Link>
           <Link to="/work" className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors">Work</Link>
-          <a href="#" className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors">Resume</a>
+          <Link to="/resume" className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors">Resume</Link>
         </div>
 
       </div>

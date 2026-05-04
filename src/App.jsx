@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import WorkPage from './components/WorkPage';
 import ProjectDetail from './components/ProjectDetail';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
 import ThemeToggle from './components/ui/ThemeToggle';
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/work" element={<WorkPage />} />
             <Route path="/project/:id" element={<ProjectDetail />} />
+            <Route path="/resume" element={<Resume />} />
           </Routes>
           <Footer />
         </main>

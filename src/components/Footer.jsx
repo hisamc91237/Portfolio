@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import SectionWrapper from './ui/SectionWrapper';
 
 export default function Footer() {
@@ -35,6 +36,7 @@ export default function Footer() {
           <a href="#" className="text-xl font-medium text-zinc-900 dark:text-zinc-50 underline hover:text-zinc-600 transition">Hisamuddin Chandiwala</a>
           <a href="https://github.com/hisamc91237" target="_blank" rel="noopener noreferrer" className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition mt-2">Github</a>
           <a href="https://www.linkedin.com/in/hisamuddin-chandiwala-975b88219/" target="_blank" rel="noopener noreferrer" className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition">Linkedin</a>
+          <Link to="/resume" className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition">Resume</Link>
           <a href="tel:+91-9819871432" className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition">+91-9819871432</a>
         </div>
 
