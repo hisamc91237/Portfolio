@@ -293,6 +293,8 @@ export default function Hero() {
         <div className="max-w-3xl mx-auto w-[95%] md:w-full border-x border-zinc-200 dark:border-zinc-800 h-32 md:h-16 grid grid-cols-2 md:grid-cols-4 font-mono">
           <a
             href="https://www.linkedin.com/in/hisamuddin-chandiwala-975b88219/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group hover:bg-zinc-100 dark:hover:bg-zinc-900 transition border-r border-zinc-200 dark:border-zinc-800 flex items-center justify-between px-3 pl-4 border-b md:border-b-0"
           >
             <div className="flex items-center gap-2 text-zinc-900 dark:text-zinc-50">
@@ -305,6 +307,8 @@ export default function Hero() {
           </a>
           <a
             href="https://github.com/hisamc91237"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group hover:bg-zinc-100 dark:hover:bg-zinc-900 transition md:border-r border-zinc-200 dark:border-zinc-800 flex items-center justify-between px-3 pl-4 border-b md:border-b-0"
           >
             <div className="flex items-center gap-2 text-zinc-900 dark:text-zinc-50">
@@ -316,7 +320,9 @@ export default function Hero() {
             <ArrowUpRight className="size-4 text-zinc-400 group-hover:rotate-45 transition" />
           </a>
           <a
-            href="#"
+            href="https://x.com/hisam91237"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group hover:bg-zinc-100 dark:hover:bg-zinc-900 transition border-r border-zinc-200 dark:border-zinc-800 flex items-center justify-between px-3 pl-4"
           >
             <div className="flex items-center gap-2 text-zinc-900 dark:text-zinc-50">
@@ -328,7 +334,7 @@ export default function Hero() {
             <ArrowUpRight className="size-4 text-zinc-400 group-hover:rotate-45 transition" />
           </a>
           <a
-            href="https://leetcode.com/u/Hisamuddin/"
+            href="https://leetcode.com/u/HisamChandiwala/"
             target="_blank"
             rel="noopener noreferrer"
             className="group hover:bg-zinc-100 dark:hover:bg-zinc-900 transition flex items-center justify-between px-3 pl-4"
