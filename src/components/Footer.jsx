@@ -34,7 +34,9 @@ export default function Footer() {
         {/* Left / Bottom on Mobile */}
         <div className="flex flex-col items-center md:items-start md:order-1">
           <a
-            href="#"
+            href="https://hisam-portfolio.vercel.app"
+            target="_blank"
+            rel="noreferrer"
             className="text-xl font-medium text-zinc-900 dark:text-zinc-50 underline hover:text-zinc-600 transition"
           >
             Hisamuddin Chandiwala

@@ -1,10 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import {
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 import {
@@ -134,10 +131,10 @@ export default function Hero() {
 
       {/* 2. Profile Info Row */}
       <div className="w-full border-b border-zinc-200 dark:border-zinc-800">
-        <div className="max-w-3xl mx-auto w-[95%] md:w-full border-x border-zinc-200 dark:border-zinc-800 h-[160px] sm:h-[20vh] md:h-[24vh] lg:h-[28vh] flex">
+        <div className="max-w-3xl mx-auto w-[95%] md:w-full border-x border-zinc-200 dark:border-zinc-800 h-[120px] sm:h-[140px] md:h-[24vh] lg:h-[28vh] flex">
           {/* Avatar Box */}
-          <div className="h-full aspect-square border-r border-zinc-200 dark:border-zinc-800 flex items-center justify-center p-2 sm:p-4 md:p-6 shrink-0">
-            <div className="relative w-full h-full rounded-full border border-zinc-300 dark:border-zinc-700 p-[1px] sm:p-[2px] transition-all duration-300">
+          <div className="h-full w-[100px] sm:w-[130px] md:w-[180px] border-r border-zinc-200 dark:border-zinc-800 flex items-center justify-center p-3 sm:p-4 md:p-6 shrink-0">
+            <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-full md:h-full rounded-full border border-zinc-300 dark:border-zinc-700 p-[1px] sm:p-[2px] transition-all duration-300">
               <div className="relative w-full h-full rounded-full overflow-hidden bg-zinc-200 dark:bg-zinc-800">
                 <AnimatePresence mode="wait">
                   <motion.img
@@ -165,7 +162,7 @@ export default function Hero() {
               <span>Full Stack Developer</span>
             </div>
             <div className="h-[25%] border-b border-zinc-200 dark:border-zinc-800 flex items-center px-3 sm:px-4 gap-1.5 sm:gap-2">
-              <h1 className="text-xl sm:text-2xl md:text-3xl font-medium text-zinc-900 dark:text-zinc-50 tracking-tight truncate">
+              <h1 className="text-base sm:text-xl md:text-3xl font-medium text-zinc-900 dark:text-zinc-50 tracking-tight">
                 Hisamuddin Chandiwala
               </h1>
               <svg
@@ -181,8 +178,8 @@ export default function Hero() {
                 ></path>
               </svg>
             </div>
-            <div className="h-[25%] px-3 sm:px-4 flex items-center font-mono tracking-tighter text-xs sm:text-sm">
-              <div className="relative h-6 overflow-hidden font-medium w-full">
+            <div className="h-[25%] px-3 sm:px-4 flex items-center font-mono tracking-tighter text-[10px] sm:text-xs md:text-sm">
+              <div className="relative h-8 sm:h-6 overflow-hidden font-medium w-full">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentIndex % TEXTS.length}
@@ -190,7 +187,7 @@ export default function Hero() {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: -15, opacity: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="text-zinc-500 absolute w-full truncate"
+                    className="text-zinc-500 absolute w-full"
                   >
                     {TEXTS[currentIndex % TEXTS.length]}
                   </motion.div>
@@ -270,7 +267,7 @@ export default function Hero() {
                 <Globe className="size-3.5" />
               </ContactIcon>
               <a
-                href="hisamuddin.dev"
+                href="https://hisam-portfolio.vercel.app"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:underline"

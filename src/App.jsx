@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         
         {/* Theme Toggle - Positioned safely */}
-        <div className="fixed top-0 right-0 sm:right-[6.5vw] md:right-[3vw] lg:right-[5.5vw] z-[999] h-0 w-16 sm:w-24 flex justify-center">
+        <div className="fixed top-0 right-2 sm:right-[6.5vw] md:right-[3vw] lg:right-[5.5vw] z-[999] h-0 w-12 sm:w-24 flex justify-center">
           <ThemeToggle />
         </div>
 

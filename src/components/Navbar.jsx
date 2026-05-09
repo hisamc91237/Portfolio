@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -20,7 +19,7 @@ export default function Navbar() {
         </Link>
 
         {/* Links */}
-        <div className="hidden md:flex items-center gap-6 text-xs sm:text-sm font-medium tracking-tighter">
+        <div className="flex items-center gap-6 text-xs sm:text-sm font-medium tracking-tighter">
           <Link
             to="/"
             className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
