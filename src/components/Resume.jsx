@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import SectionWrapper from './ui/SectionWrapper';
 import CrossLine from './ui/CrossLine';
 import { Download, ArrowLeft, Eye, ZoomIn, ZoomOut } from 'lucide-react';

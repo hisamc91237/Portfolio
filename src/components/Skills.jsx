@@ -1,21 +1,11 @@
-import React from "react";
 import {
   SiTypescript,
   SiJavascript,
   SiReact,
   SiNextdotjs,
-  SiNodedotjs,
-  SiExpress,
   SiTailwindcss,
   SiRedux,
-  SiMysql,
-  SiPostgresql,
-  SiMongodb,
-  SiRedis,
-  SiShadcnui,
-  SiPostman,
 } from "react-icons/si";
-import { FaJava } from "react-icons/fa";
 import SectionWrapper from "./ui/SectionWrapper";
 import CrossLine from "./ui/CrossLine";
 import { useTheme } from "../context/ThemeContext";

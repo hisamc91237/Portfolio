@@ -1,12 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
-  FaEnvelope,
-  FaPhone,
-  FaMapMarkerAlt,
   FaGithub,
-  FaTwitter,
   FaLinkedin,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -23,8 +19,6 @@ import {
 } from "lucide-react";
 import animeCharacter from "../assets/anime_character.jpg";
 import aestheticPfp from "../assets/aesthetic_pfp.jpg";
-import SectionWrapper from "./ui/SectionWrapper";
-import CrossLine from "./ui/CrossLine";
 
 const ContactIcon = ({ children }) => (
   <div className="flex size-7 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-800 shrink-0">

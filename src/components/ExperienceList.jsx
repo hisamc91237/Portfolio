@@ -1,7 +1,6 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import SectionWrapper from './ui/SectionWrapper';
-import { EXPERIENCES } from './Experience';
+import { EXPERIENCES } from '../data/experiences';
 
 export default function ExperienceList() {
   return (

@@ -1,7 +1,6 @@
 import { 
   SiReact, SiTailwindcss, SiVercel, 
   SiNodedotjs, SiRedux, SiFirebase, SiOpenai,
-  SiPostman, SiJavascript, SiHtml5, SiGithub, SiGit
 } from 'react-icons/si';
 import cineviaImg from '../assets/cinevia.png';
 import snippetVaultImg from '../assets/snippet_vault.png';

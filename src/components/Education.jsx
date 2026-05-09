@@ -1,4 +1,3 @@
-import React from 'react';
 import SectionWrapper from './ui/SectionWrapper';
 import CrossLine from './ui/CrossLine';
 

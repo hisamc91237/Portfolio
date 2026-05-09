@@ -1,55 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, ArrowUpRight } from 'lucide-react';
-import { 
-  SiReact, SiRedux, SiTailwindcss, SiNodedotjs, 
-  SiMongodb, SiJavascript, SiTestinglibrary 
-} from 'react-icons/si';
+import { ChevronDown } from 'lucide-react';
 import SectionWrapper from './ui/SectionWrapper';
 import CrossLine from './ui/CrossLine';
+import { EXPERIENCES } from '../data/experiences';
 
-export const EXPERIENCES = [
-  {
-    company: "eClerx",
-    role: "Front end Developer",
-    date: "March 2023 - Present",
-    location: "Hybrid",
-    isRecent: true,
-    tech: [
-      { name: "React", icon: SiReact, color: "#61DAFB" },
-      { name: "Redux", icon: SiRedux, color: "#764ABC" },
-      { name: "Tailwind", icon: SiTailwindcss, color: "#06B6D4" },
-      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
-      { name: "Testing", icon: SiTestinglibrary, color: "#E33332" }
-    ],
-    description: "Spearheaded the frontend optimization of a high-traffic e-commerce platform. Focused on enhancing performance and translating complex product goals into release-ready features with a strong emphasis on maintainability.",
-    points: [
-      "Optimized React components for enhanced rendering speed, significantly improving overall website performance.",
-      "Translated product vision into scalable, release-ready features with deep attention to usability and clean code standards.",
-      "Implemented automated React testing suites, reducing manual testing effort by 60% and increasing code quality to 99%.",
-      "Streamlined state management workflows using Redux to handle complex e-commerce data structures."
-    ]
-  },
-  {
-    company: "DevTown",
-    role: "Full Stack Developer Intern",
-    date: "January 2023 - April 2023",
-    location: "Remote",
-    isRecent: false,
-    tech: [
-      { name: "React", icon: SiReact, color: "#61DAFB" },
-      { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
-      { name: "MongoDB", icon: SiMongodb, color: "#47A248" }
-    ],
-    description: "Contributed primarily to the frontend and UI architecture of a full-stack food delivery application. Focused on engineering scalable pages and supporting backend integration.",
-    points: [
-      "Engineered multiple core application pages from scratch, ensuring full responsiveness and long-term scalability.",
-      "Crafted intuitive and high-performance UI components tailored for a seamless food ordering experience.",
-      "Collaborated on backend roles in Node.js and MongoDB to ensure efficient data flow between client and server.",
-      "Refined frontend architecture for better asset management and faster initial page loads."
-    ]
-  }
-];
 
 export default function Experience() {
   const [expandedIndex, setExpandedIndex] = useState(-1);

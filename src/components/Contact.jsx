@@ -1,6 +1,4 @@
-import React from 'react';
 import SectionWrapper from './ui/SectionWrapper';
-import CrossLine from './ui/CrossLine';
 
 export default function Contact() {
   return (

@@ -1,4 +1,3 @@
-import React, { useRef } from 'react';
 import { motion, useAnimation, useMotionValue, useTransform } from 'framer-motion';
 import { useTheme } from '../../context/ThemeContext';
 

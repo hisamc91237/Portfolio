@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
-import { ArrowLeft, ArrowUpRight, Globe } from "lucide-react";
+import { useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
+import { ArrowLeft, Globe } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import { PROJECTS } from "../data/projects";
 import SectionWrapper from "./ui/SectionWrapper";
@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 
 export default function ProjectDetail() {
   const { id } = useParams();
-  const navigate = useNavigate();
   const project = PROJECTS.find((p) => p.id === id);
 
   useEffect(() => {
