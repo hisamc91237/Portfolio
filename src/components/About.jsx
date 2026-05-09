@@ -19,13 +19,13 @@ export default function About() {
           <div className="h-full px-4 text-[15px]">
             <div className="flex flex-col gap-4 tracking-tighter py-6 text-zinc-600 dark:text-zinc-400">
               <ul className="list-disc pl-5 flex flex-col gap-4 md:gap-2 marker:text-zinc-300 dark:marker:text-zinc-700">
-                <li>Final-year full-stack developer who enjoys building things for the web with strong attention to small details.</li>
-                <li>Experienced with <span className="font-medium text-zinc-900 dark:text-zinc-50">Next.js, React, Express, Node.js, TypeScript </span>and modern full-stack technologies, focused on creating high-quality, user-centric web applications.</li>
-                <li>Passionate about exploring new technologies and turning ideas into reality through polished personal projects.</li>
+                <li>Frontend developer with professional experience, currently transitioning into full-stack development and passionate about building pixel-perfect web applications.</li>
+                <li>Experienced with <span className="font-medium text-zinc-900 dark:text-zinc-50">React, TypeScript, and Next.js</span>, focusing on creating high-quality, user-centric interfaces with strong attention to detail.</li>
+                <li>Actively learning backend technologies to build scalable end-to-end solutions and turning ideas into reality through polished projects.</li>
                 <li><span className="font-medium text-zinc-900 dark:text-zinc-50">Highlights</span>
                   <ul className="list-disc pl-6 mt-2 flex flex-col gap-2 marker:text-zinc-300 dark:marker:text-zinc-700">
-                    <li>Hacktoberfest 2025 — <span className="font-medium underline"><a target="_blank" rel="noopener noreferrer" className="text-zinc-900 dark:text-zinc-50" href="https://www.holopin.io/hacktoberfest2025/userbadge/cmhk5qqs8007mjn04ufu1xiei">Supercontributor</a></span> (Open Source)</li>
-                    <li>Solved <span className="font-medium underline"><a target="_blank" rel="noopener noreferrer" className="text-zinc-900 dark:text-zinc-50" href="https://leetcode.com/u/Hisamuddin/">700+ DSA problems</a></span> (and counting, because it's fun)</li>
+                    <li>Front end Developer at <span className="font-medium text-zinc-900 dark:text-zinc-50">eClerx</span>, spearheading the frontend optimization of high-traffic e-commerce platforms.</li>
+                    <li>Solved <span className="font-medium underline"><a target="_blank" rel="noopener noreferrer" className="text-zinc-900 dark:text-zinc-50" href="https://leetcode.com/u/HisamChandiwala/">200+ DSA problems</a></span> (and counting, because it's fun)</li>
                   </ul>
                 </li>
               </ul>
